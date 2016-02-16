@@ -1,6 +1,5 @@
 library(shiny)
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
 	# Application title
@@ -48,7 +47,7 @@ shinyUI(fluidPage(
 				submitButton("Submit")
 			)
 		),
-		# Show a plot of the generated distribution
+		
 		mainPanel(
 			fluidRow(h4('Probabilities'),
 				tableOutput("probtable")
