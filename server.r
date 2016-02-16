@@ -3,7 +3,6 @@ library(mgcv)
 load('fits.rdata')
 latlim=c(145,275); lonlim=c(1055,1225); strlim=c(22,130); radspdlim=c(-263,268)
 
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
 	datasetInput <- reactive({
 		for(i in c(0,12,24,36,48,72)){
